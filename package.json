@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "npm run build && node ./test/index.js",
-    "build": "rollup --config rollup.config.js",
+    "build": "rollup --config rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/BubbleTeam/durian/issues"
   },
-  "homepage": "https://github.com/BubbleTeam/durian#readme"
+  "homepage": "https://github.com/BubbleTeam/durian#readme",
+  "devDependencies": {
+    "rollup-plugin-buble": "^0.16.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
 }
