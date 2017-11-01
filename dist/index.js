@@ -1,25 +1,23 @@
 'use strict';
 
-var core = {
-    parse: function parse(jsonString) {
-        if (!jsonString.includes('//')) {
-            return jsonString
-        }
-        var regx = /\/\/.*?(\n|\r)/g;
-        return jsonString.replace(regx, '');
-    },
-    minify: function minify(jsonString) {
-        return this.parse(jsonString).replace(/\s*(\n|\r)\s*/g, '');
+var parse = function (jsonString) {
+    if (!jsonString.includes('//')) {
+        return jsonString
     }
+    var regx = /\/\/.*?(\n|\r)/g;
+    return jsonString.replace(regx, '');
 };
 
-var fs = require('fs');
+var minify = function (jsonString) {
+    return parse(jsonString).replace(/\s*(\n|\r)\s*/g, '');
+};
+
 var index = {
-    parse: function parse(jsonString) {
-        return JSON.parse(core.parse(jsonString));
+    parse: function parse$1(jsonString) {
+        return JSON.parse(parse(jsonString));
     },
-    minify: function minify(jsonString) {
-        return core.minify(jsonString);
+    minify: function minify$1(jsonString) {
+        return minify(jsonString);
     }
 };
 
