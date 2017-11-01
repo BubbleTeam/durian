@@ -1,12 +1,12 @@
 {
   "name": "durian",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "make your json support comment",
   "main": "./dist/index.js",
   "scripts": {
     "test": "node ./test/index.js",
-    "build": "rollup --config rollup.config.js",
-    "publish": "npm run build && npm publish"
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/BubbleTeam/durian/issues"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/BubbleTeam/durian#readme",
   "devDependencies": {
     "rollup-plugin-buble": "^0.16.0",
