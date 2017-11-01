@@ -1,0 +1,21 @@
+{
+    "code": 200,
+    "message": "success",
+    "result": {
+        "list": [
+            {
+                "goodsId": 1,
+                "goodsName": "Nike Kobe 8"
+            },
+            // {
+            //     "goodsId": 2,
+            //     "goodsName": "Nike Kobe 9"
+            // },
+            {
+                "goodsId": 3,
+                "goodsName": "Nike Kobe 10"
+            }
+        ],
+        "total": 100
+    }
+}
