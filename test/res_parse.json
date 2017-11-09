@@ -5,11 +5,13 @@
         "list": [
             {
                 "goodsId": 1,
-                "goodsName": "Nike Kobe 8"
+                "goodsName": "Nike Kobe 8",
+                "url": "https://www.kaola.com"
             },
             {
                 "goodsId": 3,
-                "goodsName": "Nike Kobe 10"
+                "goodsName": "Nike Kobe 10",
+                "url": "https://www.kaola.com"
             }
         ],
         "total": 100

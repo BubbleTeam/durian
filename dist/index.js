@@ -4,7 +4,7 @@ var parse = function (jsonString) {
     if (!jsonString.includes('//')) {
         return jsonString
     }
-    var regx = /\/\/.*?(\n|\r)/g;
+    var regx = /(^\s*\/\/[^\n\r]*)|([\n\r]\s*\/\/[^\n\r]*)/g;
     return jsonString.replace(regx, '');
 };
 
